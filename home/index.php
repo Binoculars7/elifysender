@@ -165,7 +165,7 @@
             </div>
            
             <div class="footer">
-              <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              <a href="../signup-user.php" class="btn btn-pricing btn-block">Subscribe</a>
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@
             </div>
            
             <div class="footer">
-              <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              <a href="../signup-user.php" class="btn btn-pricing btn-block">Subscribe</a>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@
             </div>
            
             <div class="footer">
-              <a href="#" class="btn btn-pricing btn-block">Subscribe</a>
+              <a href="../signup-user.php" class="btn btn-pricing btn-block">Subscribe</a>
             </div>
           </div>
         </div>
