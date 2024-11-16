@@ -212,19 +212,17 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-3 py-3">
-          <h3>Elify Sender</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet, repellendus eius blanditiis in iusto eligendi iure.</p>
+          <h5>ElifySender</h5>
+          <p>The key to building loyal customers is to make each customer feel truly valued.</p>
 
           
         </div>
         <div class="col-lg-3 py-3">
           <h5>Company</h5>
           <ul class="footer-menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Help & Support</a></li>
+            <li><a href="#services" class="btn-scroll" data-role="smoothscroll">Service</a></li>
+            <li><a href="#pricing" class="btn-scroll" data-role="smoothscroll">Pricing</a></li>
+            <li><a href="#contact" class="btn-scroll" data-role="smoothscroll">Contact</a></li>
           </ul>
         </div>
         <div class="col-lg-3 py-3">
@@ -233,17 +231,16 @@
           <a href="#" class="footer-link">elifycms@gmail.com</a>
         </div>
         <div class="col-lg-3 py-3">
+        <h5>Social Contact</h5>
           <div class="social-media-button">
             <a href="#"><span class="mai-logo-facebook-f"></span></a>
             <a href="#"><span class="mai-logo-twitter"></span></a>
-            <a href="#"><span class="mai-logo-google-plus-g"></span></a>
             <a href="#"><span class="mai-logo-instagram"></span></a>
-            <a href="#"><span class="mai-logo-youtube"></span></a>
           </div>
         </div>
       </div>
 
-      <p class="text-center" id="copyright">Copyright &copy; 2024. This template design and develop by <a href="#" target="_blank">ElifySender</a></p>
+      <p class="text-center" id="copyright">Copyright &copy; 2024. <a href="#" target="_blank">ElifySender</a></p>
     </div>
   </footer>
 
