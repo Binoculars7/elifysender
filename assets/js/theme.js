@@ -101,3 +101,48 @@ $('document').ready(function() {
   new WOW().init();
 });
 
+$('document').ready(function() {
+  $('#testimonials').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+  });
+});
+
+
+/*
+ *  Counter
+ *
+ *  Require(" jquery.animateNumber.min.js ", " jquery.waypoints.min.js ")
+ */
+$(document).ready(function() {
+  var counterInit = function() {
+    if ( $('.counter-section').length > 0 ) {
+      $('.counter-section').waypoint( function( direction ) {
+
+        if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+          var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+          $('.number').each(function(){
+            var $this = $(this),
+              num = $this.data('number');
+            $this.animateNumber(
+              {
+                number: num,
+                numberStep: comma_separator_number_step
+              }, 5000
+            );
+          });
+          
+        }
+
+      } , { offset: '95%' } );
+    }
+
+  }
+
+  counterInit();
+});
