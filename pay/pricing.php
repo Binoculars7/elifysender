@@ -38,7 +38,7 @@ if($run_Sqlk){
     $emaill = isset($fetch_infok['EMAIL']);
 
     if ($statuss == 'paid') {
-        echo "<script>window.location='../start';</script>";
+        echo "<script>window.location='../app';</script>";
     }else{
         //echo "<script>window.location='pricing.php';</script>";
     }
@@ -276,8 +276,6 @@ if($run_Sqlk){
     });
     handler.openIframe();
   }
-
-
 
 
   function payWithPaystack3(){ 

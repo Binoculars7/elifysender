@@ -37,7 +37,7 @@ if($run_Sqlk){
     $emaill = isset($fetch_infok['EMAIL']);
 
     if ($statuss == 'paid') {
-        echo "<script>window.location='../start/';</script>";
+        echo "<script>window.location='../app/';</script>";
     }else{
         if (isset($_GET['paystatus'])) {
 
@@ -87,7 +87,7 @@ if($run_Sqlk){
                 $sqlpp = "INSERT INTO `walletaddress`(`EMAIL`, `ADDRESS`, `DATER`) VALUES ('$email','0','$date')";
                 $querypp = mysqli_query($con, $sqlpp);
 
-                echo "<script>window.location='../start/';</script>";
+                echo "<script>window.location='../app/';</script>";
             }
             
             
