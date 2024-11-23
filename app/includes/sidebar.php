@@ -36,7 +36,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Elify Sales and Inventory System</title>
+  <title>Elify Sender</title>
   <link rel="icon" href="https://www.freeiconspng.com/uploads/sales-icon-7.png">
 
   <!-- Custom fonts for this template-->
@@ -63,25 +63,25 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Elify SIS</div>
+        <div class="sidebar-brand-text mx-3" style="text-transform:capitalize;">Elify Sender</div>
       </a>
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
+      <!-- Nav Item - Dashboard 
       <li class="nav-item">
         <a class="nav-link" href="index.php">
           <i class="fas fa-fw fa-home"></i>
           <span>Home</span></a>
-      </li>
+      </li>-->
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-      <!-- Heading -->
+      <!-- Heading 
       <div class="sidebar-heading">
         Tables
-      </div>
+      </div>-->
       <!-- Tables Buttons -->
 
 <?php  
@@ -89,7 +89,7 @@
       $customer = '<li class="nav-item">
         <a class="nav-link" href="customer.php">
           <i class="fas fa-fw fa-user"></i>
-          <span>Customer</span></a>
+          <span>Customers</span></a>
       </li>';
       $employee = '<li class="nav-item">
         <a class="nav-link" href="employee.php">
@@ -123,8 +123,8 @@
       </li>';
       $add_stock_quantity = '<li class="nav-item">
         <a class="nav-link" href="addq.php">
-          <i class="fas fa-fw fa-plus"></i>
-          <span>Add Stock Quantity</span></a>
+          <i class="fas fa-fw fa-paper-plane"></i>
+          <span>Message</span></a>
       </li>';
       $supplier = '<li class="nav-item">
         <a class="nav-link" href="supplier.php">
@@ -179,30 +179,26 @@ include'connection.php';
  if ($Aa=='all'){
            
               echo $customer;
-              echo $employee;
+              echo $add_stock_quantity;
+             /* echo $employee;
               echo $product_entry;
               echo $sale_entry;
               echo $sales_checker;
               echo $cashier;
-              echo $cashier_checker;
-              echo $add_stock_quantity;
+              echo $cashier_checker; 
+              
               echo $supplier;
               echo $product_description;
               echo $cash_flow;
               echo $stock_flow;
               echo $expenditure;
-              echo $net_profit;
+              echo $net_profit;*/
               echo $account;
 
 
 }elseif($Aa == 'sale'){
-              echo $sale_entry;
-              echo $sales_checker;
-              echo $product_description;
-}elseif($Aa == 'cashier'){
               echo $customer;
-              echo $cashier;
-              echo $cashier_checker;
+              echo $add_stock_quantity;
 }else{
 }
 

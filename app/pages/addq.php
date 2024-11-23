@@ -45,7 +45,7 @@ $sup .= "</select>";
             
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-2 font-weight-bold text-primary">Add More Stock&nbsp;<a  href="#" data-toggle="modal" data-target="#aModal" type="button" class="btn btn-primary bg-gradient-primary" style="border-radius: 0px;"><i class="fas fa-fw fa-plus"></i></a></h4>
+              <h4 class="m-2 font-weight-bold text-primary"> Message&nbsp;<a  href="#" data-toggle="modal" data-target="#aModal" type="button" class="btn btn-primary bg-gradient-primary" style="border-radius: 0px;"><i class="fas fa-fw fa-plus"></i></a></h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -53,10 +53,10 @@ $sup .= "</select>";
                <thead>
                    <tr>
           
-                     <th>Name</th>
-                     <th>Quantity Added</th>
                      
-                     <!--<th>Cost per one</th>
+                     <th>Sent Messages</th>
+                     
+                     <!--<th>Cost per one</th><th>Name</th>
                      <th>Total cost</th>
                      <th>Profit</th>-->
                      <th>Date</th>
@@ -73,8 +73,8 @@ $sup .= "</select>";
             while ($row = mysqli_fetch_assoc($result)) {
                                  
                 echo '<tr>';
+                //echo '<td>'. $row['NAME'].'</td>';
                 echo '<td>'. $row['NAME'].'</td>';
-                echo '<td>'. $row['ADD_Q'].'</td>';
 
                # $onePrice = $row['PRICE']/$row['QUANTITY'];
                 
@@ -122,7 +122,7 @@ include'../includes/footer.php';
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add More Stock</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Write Message</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -137,31 +137,14 @@ include'../includes/footer.php';
            </div>
            -->
            <div class="form-group">
-            <select class="form-control" name="name" required>
-              <option value="">Select Product</option>
-              <?php 
-
-              $sql = "SELECT * FROM `product`";
-
-              $query = mysqli_query($db, $sql);
-
-              while($rows = mysqli_fetch_assoc($query)){
-
-              $pdname = $rows['NAME'];
-
-              echo "<option value='".$pdname."'>".$pdname."</option>";
-            }
-              ?>
-            </select>
-           </div>
+            <textarea rows="7" cols="50" class="form-control" placeholder="Message" name="name" required></textarea>
+          </div>
            <!--
            <div class="form-group">
              <textarea rows="5" cols="50" texarea" class="form-control" placeholder="Description" name="description" required></textarea>
            </div>
          -->
-           <div class="form-group">
-             <input type="number"  min="1" max="999999999" class="form-control" placeholder="Quantity" name="quantity" required>
-           </div>
+           
            <!--
            <div class="form-group">
              <input type="number"  min="1" max="999999999" class="form-control" placeholder="On Hand" name="onhand" required>
@@ -186,7 +169,7 @@ include'../includes/footer.php';
              <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Sale Date" name="datestock" required>
            </div>
             <hr>
-            <button type="submit" class="btn btn-success"><i class="fa fa-check fa-fw"></i>Save</button>
+            <button type="submit" class="btn btn-success"><i class="fa fa-check fa-fw"></i>Send</button>
             <button type="reset" class="btn btn-danger"><i class="fa fa-times fa-fw"></i>Reset</button>
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>      
           </form>  

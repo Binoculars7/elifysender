@@ -6,9 +6,9 @@ include'../includes/connection.php';
             <?php
               #$pc = rand(10000, 999999); 
               #$_POST['prodcode'];
-              $name = $_POST['name'];
+              $name = htmlspecialchars($_POST['name']);
               #$desc = $_POST['description'];
-              $qty = $_POST['quantity'];
+              $qty = 0;
               #$oh = $_POST['onhand'];
               #$pr = $_POST['price']; 
               #$cat = $_POST['category'];
@@ -23,7 +23,7 @@ include'../includes/connection.php';
               $rowz = mysqli_fetch_assoc($queryz);
 
               
-              $pdqty = $rowz['QTY_STOCK'];
+              $pdqty = 0;
 
               $pdqtyv = $pdqty + $qty;
     /*
