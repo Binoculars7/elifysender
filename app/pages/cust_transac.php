@@ -30,12 +30,21 @@ if ($Aa=='User'){
               $lname = $_POST['lastname'];
               $pn = $_POST['phonenumber'];
               $email = $_POST['email'];
+              $role = $_POST['role'];
+
+              date_default_timezone_set("africa/lagos");
+              $datess = date("m-Y");
+
+              $rand_id = rand(100, 99999);
+              $rand_letter = chr(rand(65, 90));
+              $c_id = $rand_letter.$rand_id.$datess;
+              $coupon = $c_id;
         
               switch($_GET['action']){
                 case 'add':     
                     $query = "INSERT INTO customer
-                    (CUST_ID, FIRST_NAME, LAST_NAME, PHONE_NUMBER, EMAIL)
-                    VALUES (Null,'{$fname}','{$lname}','{$pn}','{$email}')";
+                    (CUST_ID, FIRST_NAME, LAST_NAME, PHONE_NUMBER, EMAIL, ROLE, COUPON)
+                    VALUES (Null,'{$fname}','{$lname}','{$pn}','{$email}', '{$role}', '{$coupon}')";
                     mysqli_query($db,$query)or die ('Error in updating Database');
                 break;
               }

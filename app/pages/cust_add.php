@@ -41,6 +41,7 @@ if ($Aa=='User'){
                             <div class="form-group">
                               <input class="form-control" placeholder="Phone Number" name="phonenumber" required>
                             </div>
+                            
                             <!--<div class="form-group">
                               <input class="form-control" placeholder="Email" name="email" required>
                             </div>-->

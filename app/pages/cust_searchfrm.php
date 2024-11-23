@@ -31,6 +31,9 @@ if ($Aa=='User'){
       $a=$row['LAST_NAME'];
       $b=$row['PHONE_NUMBER'];
       $c=$row['EMAIL'];
+      $d = $row['ROLE'];
+      $e = $row['COUPON'];
+      $f = $row['dates'];
     }
     $id = $_GET['id'];
 ?>
@@ -86,6 +89,55 @@ if ($Aa=='User'){
                       <div class="col-sm-9">
                         <h5>
                           : <?php echo $c; ?> <br>
+                        </h5>
+                      </div>
+                      
+                    </div>
+                    
+
+                    <div class="form-group row text-left">
+
+                      <div class="col-sm-3 text-primary">
+                        <h5>
+                          Role<br>
+                        </h5>
+                      </div>
+
+                      <div class="col-sm-9">
+                        <h5>
+                          : <?php echo $d; ?> <br>
+                        </h5>
+                      </div>
+                      
+                    </div>
+
+                    <div class="form-group row text-left">
+
+                      <div class="col-sm-3 text-primary">
+                        <h5>
+                          Coupon<br>
+                        </h5>
+                      </div>
+
+                      <div class="col-sm-9">
+                        <h5>
+                          : <?php echo $e; ?> <br>
+                        </h5>
+                      </div>
+                      
+                    </div>
+
+                    <div class="form-group row text-left">
+
+                      <div class="col-sm-3 text-primary">
+                        <h5>
+                          Timestamp<br>
+                        </h5>
+                      </div>
+
+                      <div class="col-sm-9">
+                        <h5>
+                          : <?php echo $f; ?> <br>
                         </h5>
                       </div>
                       

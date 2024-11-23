@@ -81,6 +81,11 @@ window.onload = function() {
             <div class="form-group">
               <input class="form-control" placeholder="Email" name="email">
             </div>
+            <select name="role" class="form-control">
+              <option value=""> -- Select Customer Type -- </option>
+              <option value="VIP"> VIP </option>
+              <option value="Regular"> Regular </option>
+            </select>
             <hr>
             <button type="submit" class="btn btn-success"><i class="fa fa-check fa-fw"></i>Save</button>
             <button type="reset" class="btn btn-danger"><i class="fa fa-times fa-fw"></i>Reset</button>

@@ -38,6 +38,8 @@ if ($Aa=='User'){
                         <th>Last Name</th>
                         <th>Phone Number</th>
                         <th>Email</th>
+                        <th>Role</th>
+                        <th>Coupon</th>
                         <th>Action</th>
                       </tr>
                   </thead>
@@ -48,16 +50,22 @@ if ($Aa=='User'){
         
                       while ($row = mysqli_fetch_assoc($result)) {
                       echo '<tr>';
-                      echo '<td>'. $row['FIRST_NAME'].'</td>';
-                      echo '<td>'. $row['LAST_NAME'].'</td>';
+                      echo '<td style="text-transform:capitalize;">'. $row['FIRST_NAME'].'</td>';
+                      echo '<td style="text-transform:capitalize;">'. $row['LAST_NAME'].'</td>';
                       echo '<td>'. $row['PHONE_NUMBER'].'</td>';
                       echo '<td>'. $row['EMAIL'].'</td>';
+                      echo '<td style="text-transform:capitalize;">'.$row['ROLE'].'</td>';
+                      echo '<td>'.$row['COUPON'].'</td>';
                       echo '<td align="right"> <div class="btn-group">
-                              <a type="button" class="btn btn-primary bg-gradient-primary" href="cust_searchfrm.php?action=edit & id='.$row['CUST_ID'] . '"><i class="fas fa-fw fa-list-alt"></i> Details</a>
+                              
                             <div class="btn-group">
                               <a type="button" class="btn btn-primary bg-gradient-primary dropdown no-arrow" data-toggle="dropdown" style="color:white;">
                               ... <span class="caret"></span></a>
                             <ul class="dropdown-menu text-center" role="menu">
+                                <li>
+                                  <a type="button" style="border-radius:0px;" class="btn btn-primary bg-gradient-primary btn-block" href="cust_searchfrm.php?action=edit & id='.$row['CUST_ID'] . '"><i class="fas fa-fw fa-list-alt"></i> Details</a>
+                                </li>
+                            
                                 <li>
                                   <a type="button" class="btn btn-warning bg-gradient-warning btn-block" style="border-radius: 0px;" href="cust_edit.php?action=edit & id='.$row['CUST_ID']. '">
                                     <i class="fas fa-fw fa-edit"></i> Edit
