@@ -37,7 +37,7 @@ if ($Aa=='User'){
 
               $rand_id = rand(100, 99999);
               $rand_letter = chr(rand(65, 90));
-              $c_id = $rand_letter.$rand_id.$datess;
+              $c_id = $rand_letter.$rand_id;
               $coupon = $c_id;
         
               switch($_GET['action']){

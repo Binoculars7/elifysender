@@ -166,7 +166,7 @@ include'../includes/footer.php';
            </div>
            -->
            <div class="form-group">
-             <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Sale Date" name="datestock" required>
+             <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Date" name="datestock" required>
            </div>
             <hr>
             <button type="submit" class="btn btn-success"><i class="fa fa-check fa-fw"></i>Send</button>
