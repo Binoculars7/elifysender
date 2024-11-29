@@ -18,7 +18,7 @@
                         if(count($errors) > 0){
                             ?>
                             <div class="alert alert-danger text-center">
-                                <?php 
+                                <?php
                                     foreach($errors as $error){
                                         echo $error;
                                     }
