@@ -113,7 +113,7 @@ $errors['db-error'] = "Failed while inserting data into database!";
         }
     }
 
-    //if user click login button
+    //if user click login buttonsssss
     if(isset($_POST['login'])){
         $email = mysqli_real_escape_string($con, $_POST['email']);
         $password = mysqli_real_escape_string($con, $_POST['password']);
